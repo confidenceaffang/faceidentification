@@ -12,7 +12,7 @@ if not os.path.exists("stored-faces"):
     os.makedirs("stored-faces")
 
 faces = name.detectMultiScale(
-    img, scaleFactor=1.05, minNeighbors=5, minSize=(100, 100)
+    img, scaleFactor=1.1, minNeighbors=3, minSize=(30, 30)
 )
 
 j = 0
